@@ -39,4 +39,8 @@ p {
 img {
   display: block;
 }
+
+.header {
+  background-color: red;
+}
 /*# sourceMappingURL=main.css.map */
