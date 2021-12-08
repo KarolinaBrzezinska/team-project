@@ -1,6 +1,11 @@
 
 .advantages {
 background-color: $background-color-second;
+& .grid {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 
 &__title {
     font-family: $font-family-primary;
