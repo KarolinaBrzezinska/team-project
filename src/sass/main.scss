@@ -5,4 +5,15 @@
 
 // Style dla pliku z przykładem HTML fragmentu
 
+@import './setup';
+@import './utils/variable';
+//base
+@import './base/container';
 
+//components
+@import './components/btn-hero';
+@import './components/logo';
+
+//layout
+@import './layout/hero';
+@import './layout/adventages';
