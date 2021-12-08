@@ -1,0 +1,22 @@
+.btn-hero {
+  font-size: 8px;
+  line-height: 1.303;
+  padding-bottom: 160px;
+  &__products {
+    height: 24px;
+    width: 61.4px;
+    font-weight: 400;
+
+    color: #fff;
+    border-radius: 20px;
+    background-color: #d41443;
+    margin-right: 8px;
+  }
+  &__about {
+    color: #d41443;
+    background-color: #fff;
+    width: 82.8px;
+    height: 24px;
+    border-radius: 20px;
+  }
+}
