@@ -5,17 +5,17 @@
 
 // Style dla pliku z przykładem HTML fragmentu
 
-@import './setup';
-@import './utils/variable';
+// @import "/../sass/setup";
+// @import '../utils/variable';
 
-// base
-@import './base/container';
+// // base
+// @import '../base/container';
 
-//components
-@import './components/logo';
-@import './components/btn-buy';
-@import "./components/btn-hero";
+// //components
+// @import '../components/logo';
+// @import '../components/btn-buy';
+// @import "../components/btn-hero";
 
-//layout
-@import './layout/hero';
-@import './layout/products';
+// //layout
+// @import '../layout/hero';
+// @import '../layout/products';
