@@ -1,5 +1,14 @@
-@import './base/container';
+/*
+ * Główny plik dla stylów.
+ * Wszystkie partials podłączamy tutaj.
+ */
+
+// Style dla pliku z przykładem HTML fragmentu
+
+@import './setup';
 @import './utils/variable';
+//base
+@import './base/container';
 
 //components
 @import './components/btn-hero';
@@ -7,9 +16,4 @@
 
 //layout
 @import './layout/hero';
-@import './layout/products';
 @import './layout/adventages';
-
-//utils
-@import './setup';
-
