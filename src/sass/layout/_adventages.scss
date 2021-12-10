@@ -1,25 +1,117 @@
-
-.advantages {
-background-color: $background-color-second;
-& .grid {
+/*ADVENTAGES*/
+.adventages {
+  background-color: #fff5f6;
+  & .container {
+    padding-left: 20px;
+    padding-right: 70px;
+    padding-top: 100px;
+    width: 100%;
+  }
+  & .grid {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-}
-
-&__title {
-    font-family: $font-family-primary;
-    color: $font-color-primary;
+  }
+  &__description {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 1.7;
+    padding-bottom: 97px;
+  }
+  &__title {
+    font-family: Titan One;
+    color: #d41443;
+    font-style: normal;
+    font-weight: normal;
     font-size: 36px;
     line-height: 1.145;
-    padding-bottom: 54px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    &--first {
+      position: relative;
+    }
+    .adventages__title--first::before {
+      position: absolute;
+      top: -65px;
+      content: url(../images/adventages/icon1.png);
+    }
+    &--second {
+      position: relative;
+    }
+    &--second::before {
+      position: absolute;
+      top: -65px;
+      content: url(../images/adventages/icon2.png);
+    }
+    &--third {
+      position: relative;
+    }
+    &--third::before {
+      position: absolute;
+      top: -65px;
+      content: url(../images/adventages/icon3.png);
+    }
+  }
 }
-&__item {
-    font-family: $font-family-second;
-    color: $font-color-fourth;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 1.700;
-    padding-bottom: 38px;
+
+@media screen and (min-width: 768px) {
+  .adventages {
+    & .container {
+      padding-left: 36px;
+      padding-right: 76px;
+      padding-top: 120px;
+    }
+    & .grid {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      margin-left: -60px;
+    }
+    &__item {
+      margin-left: 60px;
+    }
+
+    &__description {
+      font-size: 14px;
+      line-height: 1.7;
+      padding-bottom: 140px;
+    }
+    &__title {
+      font-size: 48px;
+      margin-bottom: 13px;
+      &--first::before {
+        top: -95px;
+      }
+      &--second::before {
+        top: -95px;
+      }
+      &--third::before {
+        top: -95px;
+      }
+    }
+  }
 }
+
+@media screen and (min-width: 1280px) {
+  .adventages {
+    & .container {
+      padding-left: 115px;
+      padding-right: 115px;
+      padding-top: 100px;
+      height: max-content;
+    }
+
+    &__description {
+      font-size: 16px;
+      line-height: 1.75;
+      letter-spacing: 0.02em;
+    }
+    &__title {
+      font-size: 58px;
+      line-height: 1.138;
+      margin-bottom: 13px;
+    }
+  }
 }
