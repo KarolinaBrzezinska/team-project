@@ -11,8 +11,8 @@
 @import './base/container';
 
 //components
-
-
+@import './components/hero-nav';
+@import './components/header-btns';
 //layout
 @import './layout/header';
 @import './layout/hero';

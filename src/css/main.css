@@ -58,6 +58,45 @@ button {
   }
 }
 
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .buttons {
+    align-items: center;
+    width: 210px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .buttons__buy {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .buttons__buy {
+    width: 159px;
+    height: 44px;
+    background: #ffffff;
+    border-radius: 22px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    color: #d41443;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .buttons__menu {
+    display: none;
+  }
+}
+
 .header {
   margin-top: 6px;
   display: flex;
