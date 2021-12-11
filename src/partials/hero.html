@@ -1,20 +1,189 @@
-    <section class="hero">
-      <div class="container hero__container">
-        <header class="hero__header">
-          <a href="" class="hero__header__logo link" data-modal-open>
-            <img src="./images/hero/header/logo.png" alt="logo" class="logo" />
-          </a>
-          <img src="./images/hero/header/menu.png" alt="menu" class="hero__header__menu" />
-        </header>
-        <div class="hero__div">
-        <h1 class="hero__title">
-          ice cream made with <span class="hero__title--part">passion</span>
-        </h1>
-        <div class="hero__btn btn-hero">
-          <button class="btn-hero__products" type="button">Products</button>
-          <button class="btn-hero__about" type="button">How it’s made?</button>
-        </div>
-        </div>
-      </div>
-    </section>
-   
+<section class="hero">
+			<div class="container hero__container">
+				<header class="header">
+					<a href="./index.html">
+						<picture>
+							<img
+								srcset="
+									./images/hero/header/logo.png    1x,
+									./images/hero/header/logo@2x.png 2x
+								"
+								src="./images/hero/header/logo.png"
+								alt="logo"
+								width="199"
+							/>
+						</picture>
+					</a>
+					<nav class="hero__nav nav">
+						<ul class="nav__list list">
+							<li class="nav__list__item nav__list__item--active">Home</li>
+							<li class="nav__list__item">About us</li>
+							<li class="nav__list__item">How it’s made?</li>
+							<li class="nav__list__item">Our products</li>
+							<li class="nav__list__item">Contact</li>
+						</ul>
+					</nav>
+					<div class="hero__buttons buttons">
+						<a href="" class="buttons__menu">
+							<img
+								src="./images/hero/header/menu.png"
+								alt="menu"
+								class="buttons__menu_img"
+							/>
+						</a>
+						<button type="button" class="buttons__buy">Buy now ></button>
+					</div>
+				</header>
+				<div class="hero__text">
+					<h1 class="hero__text__header">
+						ice cream made with <span>passion</span>
+					</h1>
+					<div class="btn-hero">
+						<button type="button" class="btn-hero__products">Products</button>
+						<button type="button" class="btn-hero__about">
+							How it’s made?
+						</button>
+					</div>
+				</div>
+				<picture class="hero__cirkle">
+					<source
+						media="(max-width: 767px)"
+						srcset="
+							./images/hero/mobile-cirkle.png    1x,
+							./images/hero/mobile-cirkle@2x.png 2x
+						"
+					/>
+					<source
+						media="(min-width: 768px)"
+						srcset="
+							./images/hero/tablet-cirkle.png    1x,
+							./images/hero/tablet-cirkle@2x.png 2x
+						"
+					/>
+					<source
+						media="(min-width: 1280px)"
+						srcset="
+							./images/hero/desktop-cirkle.png    1x,
+							./images/hero/desktop-cirkle@2x.png 2x
+						"
+					/>
+					<img
+						src="./images/hero/desktop-cirkle.png"
+						alt="cirkle"
+						width="538"
+						height="538"
+					/>
+				</picture>
+
+				<picture class="hero__ice">
+					<source
+						media="(max-width: 767px)"
+						srcset="
+							./images/hero/mobile-ice.png    1x,
+							./images/hero/mobile-ice@2x.png 2x
+						"
+					/>
+					<source
+						media="(min-width: 768px)"
+						srcset="
+							./images/hero/tablet-ice.png    1x,
+							./images/hero/tablet-ice@2x.png 2x
+						"
+					/>
+					<source
+						media="(min-width: 1280px)"
+						srcset="
+							./images/hero/desktop-ice.png    1x,
+							./images/hero/desktop-ice@2x.png 2x
+						"
+					/>
+					<img
+						src="./images/hero/desktop-ice.png"
+						alt="ice cream"
+						width="236px"
+						height="557px"
+					/>
+				</picture>
+
+				<picture class="hero__tasty">
+					<source
+						media="(min-width: 1280px)"
+						srcset="
+							/images/hero/desktop-tasty.png    1x,
+							/images/hero/desktop-tasty@2x.png 2x
+						"
+					/>
+					<source
+						media="(min-width: 768px)"
+						srcset="
+							/images/hero/tablet-tasty.png    1x,
+							/images/hero/tablet-tasty@2x.png 2x
+						"
+					/>
+					<img
+						src="/images/hero/desktop-tasty.png"
+						alt="girl is licking ice cream"
+						width="293"
+						height="232"
+					/>
+				</picture>
+				<picture class="hero__milk">
+					<source
+						media="(min-width: 1280px)"
+						srcset="
+							/images/hero/desktop-milk.png    1x,
+							/images/hero/desktop-milk@2x.png 2x
+						"
+					/>
+					<source
+						media="(min-width: 768px)"
+						srcset="
+							/images/hero/tablet-milk.png    1x,
+							/images/hero/tablet-milk@2x.png 2x
+						"
+					/>
+					<img
+						src="./images/hero/desktop-milk.png"
+						alt="girl is licking ice cream"
+						width="188"
+						height="191"
+					/>
+				</picture>
+
+				<ul class="hero__info">
+					<li class="hero__info__item">
+						<span>16</span>cafes
+						<svg class="hero__info__icon">
+							<use href="./images/icon-devs.svg#icon-hero-icon-info"></use>
+						</svg>
+					</li>
+					<li class="hero__info__item">
+						<span>23</span>food trucks<svg class="hero__info__icon">
+							<use href="./images/icon-devs.svg#icon-hero-icon-info"></use>
+						</svg>
+					</li>
+				</ul>
+				<div class="hero__milk-text">
+					<p class="hero__milk-text__text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+						eiusmod tempor incididunt ut labore et
+					</p>
+					<picture class="hero__milk-text__arrow">
+						<source
+							media="(min-width: 1280px)"
+							srcset="./images/hero/desktop-arrow.png"
+						/>
+						<source
+							media="(min-width: 768px)"
+							srcset="./images/hero/tablet-arrow.png"
+						/>
+						<img
+							src="./images/hero/desktop-arrow.png"
+							alt="button arrow"
+							width="18px"
+							height="18px"
+						/>
+					</picture>
+				</div>
+			</div>
+		</section>

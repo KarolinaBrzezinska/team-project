@@ -1,0 +1,25 @@
+.nav {
+	&__list {
+		width: 541px;
+		display: flex;
+		justify-content: space-between;
+
+		&__item {
+			font-family: DM Sans;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 16px;
+			line-height: 21px;
+			/* identical to box height */
+
+			display: flex;
+			align-items: center;
+
+			color: #ffffff;
+
+			&--active {
+				color: #d41443;
+			}
+		}
+	}
+}
