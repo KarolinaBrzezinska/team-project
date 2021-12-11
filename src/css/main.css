@@ -58,6 +58,25 @@ button {
   }
 }
 
+.header {
+  margin-top: 6px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    margin-top: 37px;
+  }
+}
+
 .hero {
   position: relative;
   background-color: #ffb8ca;
