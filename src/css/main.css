@@ -38,6 +38,8 @@ p {
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 button {
@@ -56,6 +58,28 @@ button {
     padding: 0 20px;
     width: 320px;
   }
+}
+
+.nav__list {
+  width: 541px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__list__item {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+.nav__list__item--active {
+  color: #d41443;
 }
 
 .buttons {
@@ -171,6 +195,131 @@ button {
     line-height: 18px;
     color: #d41443;
   }
+}
+
+.card {
+  position: relative;
+  border-radius: 24px;
+}
+
+.card > h3 {
+  padding-top: 161px;
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.card > p {
+  width: 200px;
+  margin: 66px auto;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 152%;
+  /* or 21px */
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: none;
+  color: #ffffff;
+}
+
+.card__dots {
+  position: absolute;
+  width: 26px;
+  top: 214px;
+  left: 127px;
+}
+
+@media screen and (min-width: 768px) {
+  .card__dots {
+    left: 97px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .card__dots {
+    left: 151px;
+  }
+}
+
+.card__arrow {
+  position: absolute;
+  left: 120px;
+  bottom: 41px;
+}
+
+@media screen and (min-width: 768px) {
+  .card__arrow {
+    left: 90px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .card__arrow {
+    left: 144px;
+  }
+}
+
+.card__image {
+  position: absolute;
+  top: -113px;
+  right: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .card__image {
+    right: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .card__image {
+    right: 0;
+    top: -250px;
+    width: 337px;
+    height: 335px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .card {
+    width: 280px;
+    height: 485px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    width: 220px;
+    height: 485px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .card {
+    width: 329px;
+    height: 525px;
+  }
+}
+
+.card--icecream {
+  background-color: #ffb8ca;
+}
+
+.card--coffee {
+  background-color: #f0d1a5;
+}
+
+.card--milkshakes {
+  background-color: #c2e297;
 }
 
 .header {
@@ -475,8 +624,8 @@ button {
 
 @media screen and (min-width: 1280px) {
   .hero__info {
-    top: 78px;
-    right: 120px;
+    top: 90px;
+    right: 97px;
   }
 }
 
@@ -590,6 +739,122 @@ button {
     height: 191px;
     left: 77px;
     bottom: 45px;
+  }
+}
+
+.products__card {
+  padding: 0;
+  display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  .products__card {
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: 1714px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .products__card {
+    justify-content: space-between;
+    width: 700px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .products__card {
+    justify-content: space-between;
+    width: 1054px;
+  }
+}
+
+.products__text {
+  margin-top: 121px;
+  margin-bottom: 144px;
+}
+
+@media screen and (min-width: 768px) {
+  .products__text {
+    margin-top: 122px;
+    margin-bottom: 150px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .products__text {
+    margin-bottom: 259px;
+  }
+}
+
+.products p {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffa5ba;
+}
+
+@media screen and (min-width: 768px) {
+  .products p {
+    font-family: Titan One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 30px;
+    /* identical to box height */
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffa5ba;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .products p {
+    font-family: Titan One;
+    font-size: 30px;
+    line-height: 34px;
+    letter-spacing: 0.04em;
+    color: #ffa5ba;
+  }
+}
+
+.products h2 {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 39px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+}
+
+@media screen and (min-width: 768px) {
+  .products h2 {
+    font-family: Titan One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    /* identical to box height */
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #d41443;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .products h2 {
+    font-family: Titan One;
+    font-size: 58px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #d41443;
   }
 }
 
