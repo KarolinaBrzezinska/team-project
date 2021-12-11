@@ -11,12 +11,10 @@
 @import './base/container';
 
 //components
-@import './components/header-buttons';
-@import './components/hero-btn';
-@import './components/hero-nav';
+@import './components/btn-hero';
+@import './components/logo';
 
 //layout
-@import './layout/header';
 @import './layout/hero';
 @import './layout/adventages';
 @import './layout/gallery'
