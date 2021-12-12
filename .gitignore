@@ -110,3 +110,7 @@ dist
 *.scss
 *.scss
 src/sass/main.scss
+*.css
+*.map
+src/sass/main.css.map
+src/sass/main.css
