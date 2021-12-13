@@ -45,7 +45,6 @@
 
     @media screen and (min-width: 768px) and (max-width: 1279px) {
       width: 180px;
-      
     }
 
     @media screen and (min-width: 1280px) {
@@ -92,7 +91,13 @@
           height: 50px;
         }
         @media screen and (min-width: 768px) {
-          top: -66px;
+          top: -87px;
+          left: 0;
+          width: 33px;
+          height: 50px;
+        }
+         @media screen and (min-width: 1280px) {
+          top: -91px;
           left: 0;
           width: 33px;
           height: 50px;
@@ -112,7 +117,13 @@
           height: 50px;
         }
         @media screen and (min-width: 768px) {
-          top: -66px;
+          top: -87px;
+          left: 0;
+          width: 50px;
+          height: 50px;
+        }
+        @media screen and (min-width: 1280px) {
+          top: -91px;
           left: 0;
           width: 50px;
           height: 50px;
@@ -134,7 +145,13 @@
         }
 
         @media screen and (min-width: 768px) {
-          top: -66px;
+          top: -87px;
+          left: 0;
+          width: 44px;
+          height: 50px;
+        }
+         @media screen and (min-width: 1280px) {
+          top: -91px;
           left: 0;
           width: 44px;
           height: 50px;
