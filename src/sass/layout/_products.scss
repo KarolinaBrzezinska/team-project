@@ -1,5 +1,18 @@
 .products {
+  @media screen and (max-width: 767px) {
+    margin-top: 121px;
+    margin-bottom: 119px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-top: 122px;
+    margin-bottom: 119px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: 127px;
+    margin-bottom: 119px;
+  }
   &__card {
+    position: relative;
     padding: 0;
     display: flex;
 
@@ -19,11 +32,13 @@
   }
 
   &__section-text {
-    margin-top: 121px;
-    margin-bottom: 144px;
+    text-align: center;
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 144px;
+    }
 
     @media screen and (min-width: 768px) {
-      margin-top: 122px;
       margin-bottom: 150px;
     }
     @media screen and (min-width: 1280px) {
@@ -49,6 +64,7 @@
         font-size: 30px;
         line-height: 34px;
         letter-spacing: 0.04em;
+        margin-bottom: 15px;
 
         color: #ffa5ba;
       }

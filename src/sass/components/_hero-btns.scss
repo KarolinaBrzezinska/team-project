@@ -1,70 +1,61 @@
 .btn-hero {
-	padding-bottom: 160px;
-	display: flex;
-	justify-content: space-between;
-	width: 153.92px;
+  display: flex;
+  justify-content: space-between;
 
-	@media screen and (min-width: 768px) {
-		padding-bottom: 173px;
-	}
-	@media screen and (min-width: 1280px) {
-		padding-bottom: 292px;
-		width: 257px;
-	}
+  @media screen and (max-width: 767px) {
+	  padding-bottom: 160px;
+	  width: 153.2px;
+  }
 
-	&__products {
-		font-family: DM Sans;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 8px;
-		line-height: 10px;
-		color: #ffffff;
-		width: 62.4px;
-		height: 24px;
-		background: #d41443;
-		border-radius: 20px;
-		@media screen and (min-width: 1280px) {
-			font-family: DM Sans;
-			font-style: normal;
-			font-weight: normal;
-			font-size: 14px;
-			line-height: 18px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 173px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 292px;
+    width: 257px;
+  }
 
-			color: #ffffff;
+  &__products {
+    cursor: pointer;
+    font-size: 8px;
+    line-height: 1.25;
+    color: #ffffff;
+    width: 62.4px;
+    height: 24px;
+    background: #d41443;
+    border-radius: 20px;
 
-			width: 104px;
-			height: 40px;
-
-			background: #d41443;
-			border-radius: 20px;
-		}
-	}
-	&__about {
-		font-family: DM Sans;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 8px;
-		line-height: 10px;
-		color: #d41443;
-
-		width: 82.8px;
-		height: 24px;
-
-		background: #ffffff;
-		border-radius: 20px;
-		@media screen and (min-width: 1280px) {
-			width: 138px;
-			height: 40px;
-
-			background: #ffffff;
-			border-radius: 20px;
-			font-family: DM Sans;
-			font-style: normal;
-			font-weight: normal;
-			font-size: 14px;
-			line-height: 18px;
-
-			color: #d41443;
-		}
-	}
+    transition-duration: 500ms;
+    &:hover {
+		background-color: #C7133E;
+      transform: scale(1.28);
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 14px;
+      line-height: 1.286;
+      width: 104px;
+      height: 40px;
+    }
+  }
+  &__about {
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 8px;
+    line-height: 1.25;
+    color: #d41443;
+    width: 82.8px;
+    height: 24px;
+    border-radius: 20px;
+    transition-duration: 500ms;
+    &:hover {
+	background-color: #ECEBEB;
+      transform: scale(1.28);
+    }
+    @media screen and (min-width: 1280px) {
+      width: 138px;
+      height: 40px;
+      font-size: 14px;
+      line-height: 1.286px;
+    }
+  }
 }
