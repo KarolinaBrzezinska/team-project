@@ -1,3 +1,8 @@
+@charset "UTF-8";
+/*
+ * Główny plik dla stylów.
+ * Wszystkie partials podłączamy tutaj.
+ */
 body {
   font-family: 'DM Sans', sans-serif;
   font-family: 'Titan One', cursive;
@@ -1106,135 +1111,6 @@ button {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #d41443;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .advantages {
-    margin-bottom: 97px;
-    margin-top: 105px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1279px) {
-  .advantages {
-    margin-bottom: 140px;
-    margin-top: 152px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .advantages {
-    margin-top: 129px;
-    margin-bottom: 139px;
-  }
-}
-
-.advantages__container {
-  display: flex;
-  margin: 0 auto;
-}
-
-@media screen and (max-width: 767px) {
-  .advantages__container {
-    height: 478px;
-    max-width: 320px;
-    padding-left: 20px;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1279px) {
-  .advantages__container {
-    width: 660px;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 0;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .advantages__container {
-    width: 1280px;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 0;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .advantages__item {
-    width: 230px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1279px) {
-  .advantages__item {
-    width: 180px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .advantages__item {
-    width: 330px;
-  }
-}
-
-.advantages__title {
-  font-family: Titan One;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  color: #d41443;
-}
-
-@media screen and (max-width: 767px) {
-  .advantages__title {
-    font-size: 36px;
-    line-height: 41px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1279px) {
-  .advantages__title {
-    font-size: 48px;
-    line-height: 55px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .advantages__title {
-    font-size: 58px;
-    line-height: 66px;
-    margin-bottom: 15px;
-  }
-}
-
-.advantages____description {
-  font-family: DM Sans;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  color: #000000;
-}
-
-@media screen and (max-width: 767px) {
-  .advantages____description {
-    font-size: 16px;
-    line-height: 1.75;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1279px) {
-  .advantages____description {
-    font-size: 14px;
-    line-height: 1.714px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .advantages____description {
-    font-size: 16px;
-    line-height: 1.75;
   }
 }
 

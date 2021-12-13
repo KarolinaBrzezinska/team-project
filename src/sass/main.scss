@@ -1,3 +1,10 @@
+/*
+ * Główny plik dla stylów.
+ * Wszystkie partials podłączamy tutaj.
+ */
+
+// Style dla pliku z przykładem HTML fragmentu
+
 @import './setup';
 @import './utils/variable';
 //base
@@ -12,6 +19,5 @@
 @import './layout/header';
 @import './layout/hero';
 @import './layout/products';
-@import './layout/advantages';
 @import './layout/gallery';
 
