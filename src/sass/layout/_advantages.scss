@@ -2,7 +2,7 @@
   background-color: #fff5f6;
   @media screen and (max-width: 767px) {
     padding-bottom: 97px;
-    padding-top: 66px;
+    padding-top: 105px;
   }
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     padding-bottom: 140px;
@@ -45,6 +45,7 @@
 
     @media screen and (min-width: 768px) and (max-width: 1279px) {
       width: 180px;
+      
     }
 
     @media screen and (min-width: 1280px) {
@@ -57,18 +58,88 @@
     color: #d41443;
     @media screen and (max-width: 767px) {
       font-size: 36px;
-      line-height: 41px;
+      line-height: 1.139;
+      margin-bottom: 19px;
     }
 
     @media screen and (min-width: 768px) and (max-width: 1279px) {
       font-size: 48px;
       line-height: 55px;
+      margin-bottom: 22px;
     }
 
     @media screen and (min-width: 1280px) {
       font-size: 58px;
       line-height: 66px;
-      margin-bottom: 15px;
+      margin-bottom: 24px;
+    }
+    &--first {
+      position: relative;
+      &::after {
+        position: absolute;
+        content: '';
+        background-image: url(./../images/advantages/icon1.png);
+        @media screen and (max-width: 767px) {
+          top: -66px;
+          left: 0;
+          width: 33px;
+          height: 50px;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1279px) {
+          top: -66px;
+          left: 0;
+          width: 33px;
+          height: 50px;
+        }
+        @media screen and (min-width: 768px) {
+          top: -66px;
+          left: 0;
+          width: 33px;
+          height: 50px;
+        }
+      }
+    }
+    &--second {
+      position: relative;
+      &::after {
+        position: absolute;
+        content: '';
+        background-image: url(./../images/advantages/icon2.png);
+        @media screen and (max-width: 767px) {
+          top: -66px;
+          left: 0;
+          width: 50px;
+          height: 50px;
+        }
+        @media screen and (min-width: 768px) {
+          top: -66px;
+          left: 0;
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+    &--third {
+      position: relative;
+      &::after {
+        position: absolute;
+        content: '';
+        background-image: url(./../images/advantages/icon3.png);
+
+        @media screen and (max-width: 767px) {
+          top: -66px;
+          left: 0;
+          width: 44px;
+          height: 50px;
+        }
+
+        @media screen and (min-width: 768px) {
+          top: -66px;
+          left: 0;
+          width: 44px;
+          height: 50px;
+        }
+      }
     }
   }
   &__description {
@@ -77,13 +148,12 @@
     letter-spacing: 0.02em;
     color: #000000;
     @media screen and (max-width: 767px) {
-      font-size: 16px;
-      line-height: 1.75;
+      font-size: 12px;
+      line-height: 1.667;
     }
 
     @media screen and (min-width: 768px) and (max-width: 1279px) {
       font-size: 14px;
-      line-height: 1.714px;
     }
 
     @media screen and (min-width: 1280px) {
