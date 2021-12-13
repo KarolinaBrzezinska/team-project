@@ -107,10 +107,10 @@ dist
 
 # TernJS port file
 .tern-port
-*.scss
-*.scss
+
+
 src/sass/main.scss
-*.css
+
 *.map
 src/sass/main.css.map
 src/sass/main.css
