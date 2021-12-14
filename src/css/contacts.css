@@ -1,0 +1,93 @@
+.contacts {
+  background: #fff5f6;
+  background-image: url(sectionbg2.jpg);
+}
+
+.type-box-one {
+  width: 73px;
+  height: 28px;
+  background: #f0d1a5;
+}
+
+.type-box-two {
+  width: 138px;
+  height: 28px;
+  background: #c2e297;
+}
+
+.text {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 186%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #000000;
+}
+
+@media screen and (max-width: 767px) {
+  .text {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .text {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .text {
+    font-size: 16px;
+  }
+}
+
+.type {
+  color: #ffffff;
+}
+
+.description {
+  color: #907e82;
+}
+
+.time {
+  letter-spacing: normal;
+  color: #ffa5ba;
+}
+
+.btn {
+  border-radius: 22px;
+}
+
+@media screen and (max-width: 767px) {
+  .btn {
+    width: 161.45px;
+    height: 44px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .btn {
+    width: 191.45px;
+    height: 44px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .btn {
+    width: 198px;
+    height: 44px;
+  }
+}
+
+.franchise {
+  background-color: #ffffff;
+  color: #d41443;
+}
+
+.location {
+  background-color: #d41443;
+  color: #ffffff;
+}
+/*# sourceMappingURL=contacts.css.map */
