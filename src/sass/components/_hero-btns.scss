@@ -3,8 +3,8 @@
   justify-content: space-between;
 
   @media screen and (max-width: 767px) {
-	  padding-bottom: 160px;
-	  width: 153.2px;
+    padding-bottom: 160px;
+    width: 153.2px;
   }
 
   @media screen and (min-width: 768px) {
@@ -17,45 +17,56 @@
 
   &__products {
     cursor: pointer;
-    font-size: 8px;
-    line-height: 1.25;
-    color: #ffffff;
     width: 62.4px;
     height: 24px;
     background: #d41443;
     border-radius: 20px;
-
     transition-duration: 500ms;
     &:hover {
-		background-color: #C7133E;
+      background-color: #c7133e;
       transform: scale(1.28);
     }
     @media screen and (min-width: 1280px) {
-      font-size: 14px;
-      line-height: 1.286;
       width: 104px;
       height: 40px;
+    }
+
+    &__link {
+      font-size: 8px;
+      line-height: 1.25;
+      color: #ffffff;
+      @media screen and (min-width: 1280px) {
+        font-size: 14px;
+        line-height: 1.286;
+        width: 104px;
+        height: 40px;
+      }
     }
   }
   &__about {
     background-color: #fff;
     cursor: pointer;
-    font-size: 8px;
-    line-height: 1.25;
-    color: #d41443;
     width: 82.8px;
     height: 24px;
     border-radius: 20px;
     transition-duration: 500ms;
     &:hover {
-	background-color: #ECEBEB;
+      background-color: #ecebeb;
       transform: scale(1.28);
     }
     @media screen and (min-width: 1280px) {
       width: 138px;
       height: 40px;
-      font-size: 14px;
-      line-height: 1.286px;
+    }
+    &__link {
+      font-size: 8px;
+      line-height: 1.25;
+      color: #d41443;
+
+      @media screen and (min-width: 1280px) {
+        font-size: 14px;
+        line-height: 1.286px;
+      }
     }
   }
 }
