@@ -144,6 +144,12 @@ button {
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .buttons__menu-btn {
+    display: none;
+  }
+}
+
 .btn-hero {
   display: flex;
   justify-content: space-between;
@@ -597,7 +603,6 @@ button {
   height: 100%;
   background-color: #e17992;
   transition-property: opacity;
-  transition-duration: 0.5s;
   transition-timing-function: 250ms;
 }
 
