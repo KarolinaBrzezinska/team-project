@@ -14,7 +14,7 @@
   }
 
   &__buy {
-	  cursor: pointer;
+    cursor: pointer;
     background-color: #fff;
     transition-duration: 500ms;
     &:hover {
@@ -32,10 +32,24 @@
       line-height: 1.312;
       color: #d41443;
     }
+   
   }
   &__menu {
-    @media screen and (min-width: 1280px) {
-      display: none;
+    &-btn {
+      width: 20px;
+      height: 16px;
+      background-image: url(../images/hero/header/menu.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      @media screen and (max-width: 767px) {
+        background-color: #ffb8ca;
+      }
+      @media screen and (min-width: 768px) and (max-width: 1279px) {
+        background-color: #ffa5ba;
+      }
+      // @media screen and (min-width: 1280px) {
+      //   display: none;
+      // }
     }
   }
 }

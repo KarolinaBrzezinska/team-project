@@ -124,9 +124,23 @@ button {
   }
 }
 
-@media screen and (min-width: 1280px) {
-  .buttons__menu {
-    display: none;
+.buttons__menu-btn {
+  width: 20px;
+  height: 16px;
+  background-image: url(../images/hero/header/menu.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 767px) {
+  .buttons__menu-btn {
+    background-color: #ffb8ca;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .buttons__menu-btn {
+    background-color: #ffa5ba;
   }
 }
 
@@ -571,6 +585,118 @@ button {
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px), screen and (min-resolution: 192dpi) and (min-width: 1280px), screen and (min-resolution: 2dppx) and (min-width: 1280px) {
   .card--milkshakes::after {
     background-image: url(../images/products/desktop-3-ice@2x.png);
+  }
+}
+
+.backdrop {
+  z-index: 3;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #e17992;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+  transition-timing-function: 250ms;
+}
+
+.backdrop__is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.backdrop__is-hidden .mobile-menu {
+  transform: translate3d(0, -2rem, 0);
+  opacity: 0;
+}
+
+.mobile-menu {
+  width: 100%;
+  height: 100%;
+}
+
+.mobile-menu--link-active {
+  color: #d41443;
+}
+
+.mobile-menu__menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-menu__border {
+  border: 1px solid #e18298;
+  padding: 13px 0;
+}
+
+.mobile-menu__border--no {
+  padding: 13px 0;
+}
+
+.mobile-menu__nav {
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+}
+
+.mobile-menu__nav__item {
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.286;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-menu__nav__item {
+    padding-left: 21px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mobile-menu__nav__item {
+    padding-left: 24px;
+  }
+}
+
+.mobile-menu__nav__item--active {
+  color: #d41443;
+}
+
+.mobile-menu__btn-close {
+  width: 16px;
+  height: 16px;
+  margin-left: auto;
+  margin-right: 34px;
+  margin-top: 23px;
+  background-image: url(../images/btn-close.png);
+  background-repeat: no-repeat;
+  background-color: #e17992;
+}
+
+.mobile-menu__btn-buy {
+  width: 209px;
+  height: 44px;
+  background: #ffffff;
+  border-radius: 22px;
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.313;
+  text-align: center;
+  color: #d41443;
+  margin-top: 23px;
+  margin-left: auto;
+  margin-right: 34px;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1279px) {
+  .mobile-menu__btn-buy {
+    width: 186px;
+    height: 44px;
+    margin-right: 34px;
   }
 }
 
@@ -1786,6 +1912,7 @@ h1 {
 }
 
 .contacts__link {
+  text-decoration: none;
   font-family: DM Sans;
   font-style: normal;
   font-weight: 500;
@@ -1811,17 +1938,24 @@ h1 {
   }
 }
 
-.container__container {
+.contacts__container {
   display: flex;
   justify-content: center;
 }
 
+.btn-container {
+  justify-content: center;
+  padding-left: 25px;
+}
+
 .contacts {
+  background-repeat: no-repeat;
   background: #fff5f6;
-  background-image: url(../images/opinion-contacts/sectionbg2.jpg);
+  background-image: url(../images/opinion-contacts/back.png);
 }
 
 .contacts__box {
+  justify-content: start;
   background: #ffffff;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
@@ -1899,7 +2033,7 @@ h1 {
   }
 }
 
-.text {
+.texty {
   font-family: DM Sans;
   font-style: normal;
   font-weight: 500;
@@ -1910,19 +2044,19 @@ h1 {
 }
 
 @media screen and (max-width: 767px) {
-  .text {
+  .texty {
     font-size: 12px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
-  .text {
+  .texty {
     font-size: 14px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .text {
+  .texty {
     font-size: 16px;
   }
 }
@@ -1973,6 +2107,31 @@ h1 {
 .location {
   background-color: #d41443;
   color: #ffffff;
+}
+
+.border {
+  width: 234px;
+  height: 0px;
+  height: 0px;
+  border: 1px solid #e1e1e1;
+}
+
+@media screen and (max-width: 767px) {
+  .border {
+    width: 179px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .border {
+    width: 157px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .border {
+    width: 234px;
+  }
 }
 
 .footer {

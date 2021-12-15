@@ -7,7 +7,7 @@
   refs.openModalBtn.addEventListener('click', toggleModal);
   refs.modalClose.addEventListener('click', toggleModal);
   function toggleModal() {
-    refs.modal.classList.toggle('is-hidden');
+    refs.modal.classList.toggle('backdrop__is-hidden');
   }
 })();
 const modal = document.querySelector('[data-mobile-menu]');
