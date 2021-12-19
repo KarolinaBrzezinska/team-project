@@ -2139,6 +2139,10 @@ h1 {
   }
 }
 
+.btn__arrow-red {
+  margin-left: 14px;
+}
+
 .footer {
   background-color: #FFF5F6;
 }
@@ -2162,12 +2166,11 @@ h1 {
 @media screen and (min-width: 1200px) {
   .footer__container {
     padding-top: 83px;
-    padding-bottom: 97px;
   }
 }
 
 .footer__label {
-  font-family: "Titan One", cursive;
+  font-family: 'Titan One';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -2198,7 +2201,7 @@ h1 {
 }
 
 .footer__title {
-  font-family: "Titan One", cursive;
+  font-family: 'Titan One';
   font-style: normal;
   font-weight: 400;
   font-size: 34px;
@@ -2254,7 +2257,7 @@ h1 {
   list-style-type: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__title {
     width: 310px;
   }
@@ -2280,10 +2283,10 @@ h1 {
 
 .footer__contact-tel {
   font-weight: 900;
-  color: #000;
+  color: #000000;
   font-size: 12px;
   line-height: 1.18;
-  font-family: "DM Sans", sans-serif;
+  font-family: "DM Sans";
 }
 
 @media screen and (min-width: 768px) {
@@ -2299,7 +2302,7 @@ h1 {
 }
 
 .footer__contact-link {
-  color: #d41443;
+  color: #D41443;
   font-size: 12px;
   line-height: 1.18;
   margin-left: 4px;
@@ -2327,11 +2330,11 @@ h1 {
   font-size: 14px;
   line-height: 1.5;
   text-align: center;
-  font-family: "DM Sans", sans-serif;
+  font-family: "DM Sans";
   font-style: normal;
   font-weight: bold;
   letter-spacing: 0.02em;
-  color: #907e82;
+  color: #907E82;
 }
 
 @media screen and (min-width: 768px) {
@@ -2357,13 +2360,25 @@ h1 {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer__social:hover,
-.footer__social:focus,
-.footer__social-link:hover,
-.footer__social-link:focus,
-.footer__social-icon:hover,
-.footer__social-icon:focus {
-  fill: #d41443;
-  outline: none;
+.footer__social-item {
+  position: relative;
+  max-width: 100%;
+}
+
+img.backup_icon {
+  transform: translate(-85%, 0%);
+}
+
+.footer__social-item:hover img.backup_icon {
+  opacity: 1;
+}
+
+.footer__social-item img.backup_icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity .2s;
 }
 /*# sourceMappingURL=main.css.map */
