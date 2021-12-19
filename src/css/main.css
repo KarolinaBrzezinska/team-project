@@ -4,8 +4,8 @@
  * Wszystkie partials podłączamy tutaj.
  */
 body {
-  font-family: 'DM Sans', sans-serif;
-  font-family: 'Titan One', cursive;
+  font-family: "DM Sans", sans-serif;
+  font-family: "Titan One", cursive;
 }
 
 h1,
@@ -42,7 +42,7 @@ img {
 
 button {
   border: none;
-  font-family: 'DM Sans';
+  font-family: "DM Sans";
 }
 
 .container {
@@ -1916,226 +1916,268 @@ h1 {
   fill: #e1e1e1;
 }
 
-.contacts__link {
-  text-decoration: none;
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 183%;
-  color: #907e82;
+.contact {
+  background: linear-gradient(to top, #fff5f6 95%, #ffffff 95%);
+  margin-top: 86px;
 }
 
-@media screen and (max-width: 767px) {
-  .contacts__link {
-    font-size: 12px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1279px) {
-  .contacts__link {
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .contacts__link {
-    font-size: 16px;
-  }
-}
-
-.contacts__container {
+.contact .container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 50px;
 }
 
-.btn-container {
-  justify-content: center;
-  padding-left: 25px;
-}
-
-.contacts {
-  background-repeat: no-repeat;
-  background: #fff5f6;
-  background-image: url(../images/opinion-contacts/back.png);
-}
-
-.contacts__box {
-  justify-content: start;
+.contact__item {
+  width: 100%;
+  padding: 43px 20px;
+  margin-bottom: 20px;
   background: #ffffff;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
-@media screen and (max-width: 767px) {
-  .contacts__box {
-    width: 220px;
-    height: 427px;
-  }
+.contact__branch {
+  display: flex;
+  width: max-content;
+  height: 16px;
+  padding: 0 25px;
+  font-family: DM Sans;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 4px;
+  margin-bottom: 25px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1279px) {
-  .contacts__box {
-    width: 220px;
-    height: 544px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .contacts__box {
-    width: 330px;
-    height: 572px;
-  }
-}
-
-.type-box-one {
+.contact__branch--cafe {
   background: #f0d1a5;
 }
 
-@media screen and (max-width: 767px) {
-  .type-box-one {
-    width: 80px;
-    height: 16px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1279px) {
-  .type-box-one {
-    width: 73px;
-    height: 28px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .type-box-one {
-    width: 73px;
-    height: 28px;
-  }
-}
-
-.type-box-two {
+.contact__branch--foodtruck {
+  width: 130px;
   background: #c2e297;
 }
 
-@media screen and (max-width: 767px) {
-  .type-box-two {
-    width: 130px;
-    height: 16px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1279px) {
-  .type-box-two {
-    width: 138px;
-    height: 28px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .type-box-two {
-    width: 138px;
-    height: 28px;
-  }
-}
-
-.texty {
+.contact__city {
   font-family: DM Sans;
   font-style: normal;
   font-weight: 500;
-  line-height: 186%;
-  text-align: center;
+  font-size: 12px;
+  line-height: 1.86;
   letter-spacing: 0.04em;
   color: #000000;
+  margin-bottom: 10px;
 }
 
-@media screen and (max-width: 767px) {
-  .texty {
-    font-size: 12px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1279px) {
-  .texty {
-    font-size: 14px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .texty {
-    font-size: 16px;
-  }
-}
-
-.type {
-  color: #ffffff;
-}
-
-.description {
+.contact__description {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
   color: #907e82;
 }
 
-.time {
-  letter-spacing: normal;
+.contact__line {
+  width: 100%;
+  height: 1px;
+  border: 0px;
+  background: #e1e1e1;
+  margin: 25px 0;
+}
+
+.contact__opendays {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  color: #000000;
+}
+
+.contact__openhoures {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
   color: #ffa5ba;
+  margin-bottom: 10px;
 }
 
-.btn {
+.contact__link {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #907e82;
+}
+
+.contact__button {
+  width: 161px;
+  height: 44px;
   border-radius: 22px;
+  border: none;
+  font-family: DM sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 10px;
 }
 
-@media screen and (max-width: 767px) {
-  .btn {
-    width: 161.45px;
-    height: 44px;
-  }
+.contact__button--locations {
+  background: #d41342;
+  color: #fff;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1279px) {
-  .btn {
-    width: 191.45px;
-    height: 44px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .btn {
-    width: 198px;
-    height: 44px;
-  }
-}
-
-.franchise {
-  background-color: #ffffff;
+.contact__button--franchise {
+  background: #ffffff;
   color: #d41443;
 }
 
-.location {
-  background-color: #d41443;
-  color: #ffffff;
+.contact__button--franchise:hover {
+  background: #ecebeb;
 }
 
-.border {
-  width: 234px;
-  height: 0px;
-  height: 0px;
-  border: 1px solid #e1e1e1;
+.contact__buttonslist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 54px;
 }
 
-@media screen and (max-width: 767px) {
-  .border {
-    width: 179px;
+@media screen and (min-width: 768px) {
+  .contact {
+    margin-top: 119px;
+    background: linear-gradient(to top, #fff5f6 89%, #ffffff 89%);
   }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1279px) {
-  .border {
-    width: 157px;
+  .contact .container {
+    padding: 0 36px;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .contact__item {
+    flex-basis: calc(100% / 3);
+    max-width: 330px;
+    padding: 50px 31px;
+  }
+  .contact__item:not(:last-child) {
+    margin-right: 20px;
+  }
+  .contact__buttonslist {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 81px;
+  }
+  .contact__button {
+    margin-right: 15px;
+    font-size: 16px;
+  }
+  .contact__button--locations {
+    width: 191px;
+    height: 44px;
+  }
+  .contact__button--franchise {
+    width: 174px;
+    height: 44px;
+  }
+  .contact__branch {
+    font-size: 16px;
+    height: 28px;
+    padding: 0 16px;
+  }
+  .contact__branch--foodtruck {
+    width: 138px;
+  }
+  .contact__city,
+  .contact__description,
+  .contact__branch,
+  .contact__opendays,
+  .contact__openhoures,
+  .contact__link {
+    font-size: 14px;
+  }
+  .contact__line {
+    margin: 30px 0;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .border {
-    width: 234px;
+  .contact {
+    margin-top: 132px;
+    background: linear-gradient(to top, #fff5f6 89%, #ffffff 89%);
+    position: relative;
+  }
+  .contact::before {
+    content: "";
+    background-image: url(../images/contact-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 50px;
+  }
+  .contact .container {
+    padding: 0 115px;
+    margin: 0 auto;
+  }
+  .contact__item {
+    padding-top: 51px;
+    padding-left: 43px;
+    padding-right: 43px;
+    padding-bottom: 61px;
+  }
+  .contact__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .contact__buttonslist {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 86px;
+  }
+  .contact__branch {
+    font-size: 16px;
+    height: 28px;
+    padding: 0 16px;
+  }
+  .contact__branch--foodtruck {
+    width: 138px;
+  }
+  .contact__city,
+  .contact__description,
+  .contact__branch,
+  .contact__opendays,
+  .contact__openhoures,
+  .contact__link {
+    font-size: 16px;
+  }
+  .contact__line {
+    margin: 32px 0;
+  }
+  .contact__button--locations {
+    width: 198px;
+  }
+  .contact__button--franchise {
+    width: 180px;
+  }
+}
+
+@media screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min--moz-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .contact::before {
+    background-image: url("../images/contact-bg@2x.png");
   }
 }
 
