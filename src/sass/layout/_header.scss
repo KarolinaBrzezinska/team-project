@@ -1,5 +1,8 @@
+// header
+
 .header {
   background-color: #ffb8ca;
+
   &__container {
     @media screen and (min-width: 768px) and (max-width: 1279px) {
       width: 702px;
@@ -9,142 +12,143 @@
     }
   }
 }
+//logo
 
+.logo {
+  @media screen and (max-width: 767px) {
+    margin-top: 6px;
+  }
+}
+
+//navbar
 .navbar {
-  position: relative;
-  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: space-between;
   color: #fff;
+
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     justify-content: start;
+    padding-top: 37px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 37px;
   }
 }
-/* NAVBAR MENU */
 .nav {
   &__list {
     display: flex;
-  }
-}
-/*RESPONSIVE NAVBAR MENU STARTS*/
-/* CHECKBOX HACK */
-input[type='checkbox'] {
-  display: none;
-}
-/*HAMBURGER MENU*/
-.hamburger {
-  display: none;
-  user-select: none;
-}
-.icon-mobile {
-  display: none;
-}
-/* APPLYING MEDIA QUERIES */
-@media screen and (max-width: 767px) {
-  .logo {
-    margin-top: 6px;
+    
+    @media screen and (max-width: 1279px) {
+      position: absolute;
+      z-index: 10;
+      overflow: hidden;
+      width: 254px;
+      height: 100vh;
+
+      right: -100%;
+      background-color: #e17992;
+
+      display: block;
+      &__btn-menu {
+        background: #ffffff;
+        border-radius: 22px;
+        width: 209px;
+        height: 44px;
+
+        color: #d41443;
+        font-family: DM Sans;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.313;
+        text-align: center;
+
+        margin-bottom: 19px;
+        margin-left: 24px;
+        position: relative;
+      }
+      &__border {
+        border: 1px solid #e18298;
+      }
+      &__link {
+        font-family: DM Sans;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.286;
+        color: #ffffff;
+        display: block;
+        margin: 14px 0;
+        padding-left: 24px;
+        &--active {
+          color: #d41443;
+        }
+      }
+    }
+
+    @media screen and (min-width: 1280px) {
+      &__btn-menu {
+        display: none;
+      }
+      &__link {
+        font-family: DM Sans;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21px;
+
+        display: flex;
+        align-items: center;
+
+        color: #ffffff;
+        &--active {
+          color: #d41443;
+        }
+      }
+    }
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .nav-links {
     margin-left: auto;
   }
-  .hamburger {
-    margin-right: 30px;
-  }
-  .navbar {
-    padding-top: 37px;
+}
+
+// input
+
+input[type='checkbox'] {
+  display: none;
+  @media screen and (max-width: 1279px) {
+    &:checked ~ .nav__list {
+      display: block;
+      transition: 2s;
+      top: 0;
+      right: 0;
+    }
   }
 }
-@media screen and (max-width: 1279px) {
-  .icon-mobile {
+//hamburger
+
+.hamburger {
+  display: none;
+  user-select: none;
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin-right: 30px;
+    display: block;
+  }
+}
+
+//icon
+.icon-mobile {
+  display: none;
+  @media screen and (max-width: 1279px) {
     display: block;
     width: 14px;
     height: 14px;
     margin-left: 208px;
     margin-top: 23px;
     margin-bottom: 23px;
-  }
-  .nav__list {
-    z-index: 10;
-    overflow: hidden;
-    width: 254px;
-    height: 100%;
-    position: absolute;
-    right: -100%;
-    background-color: #e17992;
-
-    display: block;
-    &__btn-menu {
-      background: #ffffff;
-      border-radius: 22px;
-      width: 209px;
-      height: 44px;
-
-      color: #d41443;
-      font-family: DM Sans;
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 1.313;
-      text-align: center;
-
-      margin-bottom: 19px;
-      margin-left: 24px;
-      position: relative;
-    }
-    &__border {
-      border: 1px solid #e18298;
-    }
-    &__link {
-      font-family: DM Sans;
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 1.286;
-      color: #ffffff;
-      display: block;
-      margin: 14px 0;
-      padding-left: 24px;
-      &--active {
-        color: #d41443;
-      }
-    }
-  }
-
-  input[type='checkbox']:checked ~ .nav__list {
-    display: block;
-    transition: 2s;
-    top: 0;
-    right: 0;
-  }
-  .hamburger {
-    display: block;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .nav__list {
-    &__btn-menu {
-      display: none;
-    }
-    &__link {
-      font-family: DM Sans;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 16px;
-      line-height: 21px;
-      /* identical to box height */
-
-      display: flex;
-      align-items: center;
-
-      color: #ffffff;
-      &--active {
-        color: #d41443;
-      }
-    }
-  }
-  .navbar {
-    padding-top: 37px;
   }
 }
