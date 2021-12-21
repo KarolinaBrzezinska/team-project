@@ -1,6 +1,7 @@
 .hero {
   overflow: hidden;
   position: relative;
+  
 
   
   &__img {
@@ -128,6 +129,7 @@
   // images position absolute
   &__cirkle {
     position: absolute;
+    z-index: -1;
     @media screen and (max-width: 767px) {
       bottom: 75px;
       right: -62px;

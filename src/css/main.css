@@ -641,6 +641,8 @@ button {
 }
 
 .nav__list {
+  z-index: 2;
+  position: relative;
   display: flex;
 }
 
@@ -726,6 +728,8 @@ input[type='checkbox'] {
 }
 
 .hamburger {
+  z-index: 2;
+  position: relative;
   display: none;
   user-select: none;
 }
@@ -917,6 +921,7 @@ input[type='checkbox'] {
 
 .hero__cirkle {
   position: absolute;
+  z-index: -1;
 }
 
 @media screen and (max-width: 767px) {
