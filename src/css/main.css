@@ -1943,22 +1943,30 @@ input[type='checkbox'] {
   }
 }
 
+.opinions__icons {
+  display: flex;
+  justify-content: center;
+}
+
 .opinions__elipse {
   width: 4px;
   height: 4px;
   fill: #c7133e;
+  margin: 0.2em;
 }
 
 .opinions__elipse-off {
   width: 12px;
   height: 12px;
   fill: #d9d9d9;
+  margin: 0.4em;
 }
 
 .opinions__home {
   width: 12px;
   height: 12px;
   fill: #d31342;
+  margin: 0.4em;
 }
 
 .opinions__quote {
