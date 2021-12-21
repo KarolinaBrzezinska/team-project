@@ -615,10 +615,11 @@ button {
 }
 
 .navbar {
+  position: relative;
+  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #ffb8ca;
   color: #fff;
 }
 
@@ -753,8 +754,6 @@ input[type='checkbox'] {
 }
 
 .hero {
-  position: relative;
-  background-color: #ffb8ca;
   overflow: hidden;
 }
 
@@ -912,7 +911,6 @@ input[type='checkbox'] {
 
 .hero__cirkle {
   position: absolute;
-  z-index: -1;
 }
 
 @media screen and (max-width: 767px) {
