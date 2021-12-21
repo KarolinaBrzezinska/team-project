@@ -36,6 +36,10 @@ p {
   text-decoration: none;
 }
 
+.active {
+  color: #d41443;
+}
+
 img {
   display: block;
 }
@@ -706,21 +710,106 @@ button {
 }
 
 .header {
-  margin-top: 6px;
+  background-color: #ffb8ca;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    padding-top: 6px;
+  }
+}
+
+.navbar {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  background-color: #ffb8ca;
+  color: #fff;
 }
 
-.header__container {
+/* NAVBAR MENU */
+.nav__list {
   display: flex;
-  flex-direction: column;
+  gap: 1em;
+  font-size: 18px;
 }
 
-@media screen and (min-width: 768px) {
-  .header {
-    margin-top: 37px;
+/*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type='checkbox'] {
+  display: none;
+}
+
+/*HAMBURGER MENU*/
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+
+.icon-mobile {
+  display: none;
+}
+
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+  .icon-mobile {
+    display: block;
+    width: 14px;
+    height: 14px;
+    margin-left: 208px;
+    margin-top: 23px;
+    margin-bottom: 23px;
+  }
+  .nav__list {
+    z-index: 10;
+    overflow: hidden;
+    width: 254px;
+    height: 100%;
+    position: absolute;
+    right: -100%;
+    background-color: #e17992;
+    display: block;
+  }
+  .nav__list__btn-menu {
+    background: #ffffff;
+    border-radius: 22px;
+    width: 209px;
+    height: 44px;
+    color: #d41443;
+    font-family: DM Sans;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.313;
+    text-align: center;
+    margin-bottom: 19px;
+    margin-left: 24px;
+    position: relative;
+  }
+  .nav__list__border {
+    border: 1px solid #e18298;
+  }
+  .nav__list__link {
+    font-family: DM Sans;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.286;
+    color: #ffffff;
+    display: block;
+    margin: 14px 0;
+    padding-left: 24px;
+  }
+  .nav__list__link--active {
+    color: #d41443;
+  }
+  input[type='checkbox']:checked ~ .nav__list {
+    display: block;
+    transition: 2s;
+    top: 0;
+    right: 0;
+  }
+  .hamburger {
+    display: block;
   }
 }
 
