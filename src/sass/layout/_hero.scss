@@ -2,9 +2,9 @@
   position: relative;
   background-color: #ffb8ca;
   overflow: hidden;
-  &__img{
-	  width: 100%;
-	  height: auto;
+  &__img {
+    width: 100%;
+    height: auto;
   }
 
   &__container {
@@ -29,8 +29,8 @@
     position: relative;
     z-index: 2;
     @media screen and (max-width: 767px) {
-		padding-top: 137px;
-		width: 218px;
+      padding-top: 137px;
+      width: 218px;
     }
     @media screen and (min-width: 768px) {
       width: 162px;
@@ -38,7 +38,7 @@
     }
     @media screen and (min-width: 1280px) {
       width: 277px;
-	  padding-top: 84px;
+      padding-top: 84px;
       margin-left: 69px;
     }
 
@@ -151,7 +151,6 @@
     position: absolute;
     bottom: 0;
 
-
     @media screen and (max-width: 767px) {
       right: 50px;
 
@@ -225,6 +224,9 @@
 
     top: 53px;
     right: 48px;
+    @media screen and (min-width: 767px) and (max-width: 1279px) {
+      top: 12px;
+    }
     @media screen and (min-width: 1280px) {
       top: 90px;
       right: 97px;
