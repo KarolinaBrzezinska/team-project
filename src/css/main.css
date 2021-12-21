@@ -1807,6 +1807,131 @@ button {
   }
 }
 */
+.opinions {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.opinions__img {
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+}
+
+.opinions__par {
+  margin-left: 5em;
+  margin-right: 5em;
+  border-top: 3em solid #fafafa;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  line-height: 30px;
+  background-image: repeating-linear-gradient(180deg, transparent, transparent 29px, grey 30px);
+  color: #000000;
+}
+
+@media screen and (max-width: 767px) {
+  .opinions__par {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .opinions__par {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .opinions__par {
+    font-size: 16px;
+  }
+}
+
+.opinions__name {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 186%;
+  text-align: center;
+  color: #000000;
+}
+
+@media screen and (max-width: 767px) {
+  .opinions__name {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .opinions__name {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .opinions__name {
+    font-size: 20px;
+  }
+}
+
+.opinions__text {
+  background-color: #fafafa;
+}
+
+@media screen and (max-width: 767px) {
+  .opinions__text {
+    width: 280px;
+    height: 308px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .opinions__text {
+    width: 620px;
+    height: 164px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .opinions__text {
+    width: 926px;
+    height: 138px;
+  }
+}
+
+.opinions__elipse {
+  width: 4px;
+  height: 4px;
+  fill: #c7133e;
+}
+
+.opinions__elipse-off {
+  width: 12px;
+  height: 12px;
+  fill: #d9d9d9;
+}
+
+.opinions__home {
+  width: 12px;
+  height: 12px;
+  fill: #d31342;
+}
+
+.opinions__quote {
+  position: absolute;
+  margin-top: 2em;
+  margin-left: 3em;
+  width: 54px;
+  height: 40px;
+  fill: #e1e1e1;
+}
+
 .hidden {
   display: none;
 }
