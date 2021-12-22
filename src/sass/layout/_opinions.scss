@@ -10,9 +10,10 @@
     justify-content: center;
   }
   &__par {
+    position: relative;
+    top: 3em;
     margin-left: 5em;
     margin-right: 5em;
-    border-top: 3em solid #fafafa;
     font-family: DM Sans;
     font-style: normal;
     font-weight: 500;
@@ -20,7 +21,12 @@
     text-align: center;
     letter-spacing: 0.04em;
     line-height: 30px;
-    background-image: repeating-linear-gradient(180deg, transparent, transparent 29px, grey 30px);
+    background-image: repeating-linear-gradient(
+      180deg,
+      transparent,
+      transparent 29px,
+      #e1e1e1 30px
+    );
 
     color: #000000;
     @media screen and (max-width: 767px) {
@@ -70,6 +76,7 @@
 .opinions__icons {
   display: flex;
   justify-content: center;
+  margin-top: 1em;
 }
 .opinions__elipse {
   width: 4px;
