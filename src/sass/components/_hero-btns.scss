@@ -7,7 +7,9 @@
     width: 153.2px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    width: 153.2px;
+
     padding-bottom: 173px;
   }
   @media screen and (min-width: 1280px) {
@@ -35,6 +37,9 @@
       font-size: 8px;
       line-height: 1.25;
       color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       @media screen and (min-width: 1280px) {
         font-size: 14px;
         line-height: 1.286;
@@ -50,6 +55,7 @@
     height: 24px;
     border-radius: 20px;
     transition-duration: 500ms;
+
     &:hover {
       background-color: #ecebeb;
       transform: scale(1.28);
@@ -62,10 +68,13 @@
       font-size: 8px;
       line-height: 1.25;
       color: #d41443;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       @media screen and (min-width: 1280px) {
         font-size: 14px;
-        line-height: 1.286px;
+        line-height: 1.286;
       }
     }
   }

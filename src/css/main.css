@@ -166,8 +166,9 @@ button {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .btn-hero {
+    width: 153.2px;
     padding-bottom: 173px;
   }
 }
@@ -204,6 +205,9 @@ button {
   font-size: 8px;
   line-height: 1.25;
   color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (min-width: 1280px) {
@@ -240,12 +244,15 @@ button {
   font-size: 8px;
   line-height: 1.25;
   color: #d41443;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (min-width: 1280px) {
   .btn-hero__about__link {
     font-size: 14px;
-    line-height: 1.286px;
+    line-height: 1.286;
   }
 }
 
@@ -829,8 +836,6 @@ input[type='checkbox'] {
 .hero__text__header {
   max-width: 218px;
   font-family: Titan One;
-  font-style: normal;
-  font-weight: normal;
   font-size: 26px;
   line-height: 30px;
   letter-spacing: 0.04em;
@@ -841,35 +846,21 @@ input[type='checkbox'] {
 
 @media screen and (min-width: 767px) {
   .hero__text__header {
-    font-family: Titan One;
-    font-style: normal;
-    font-weight: normal;
     font-size: 22px;
     line-height: 25px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: #ffffff;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .hero__text__header {
     max-width: 262px;
-    font-family: Titan One;
-    font-style: normal;
-    font-weight: normal;
     font-size: 38px;
     line-height: 44px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: #ffffff;
   }
 }
 
 .hero__text__header > span {
   font-family: Titan One;
-  font-style: normal;
-  font-weight: normal;
   font-size: 48px;
   line-height: 96.5%;
   text-transform: uppercase;
@@ -878,28 +869,18 @@ input[type='checkbox'] {
 
 @media screen and (min-width: 767px) {
   .hero__text__header > span {
-    font-family: Titan One;
-    font-style: normal;
-    font-weight: normal;
     font-size: 34px;
     line-height: 90.5%;
     /* or 31px */
     letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: #d41443;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .hero__text__header > span {
-    font-family: Titan One;
-    font-style: normal;
-    font-weight: normal;
     font-size: 58px;
     line-height: 90.5%;
-    /* or 52px */
     letter-spacing: 0.04em;
-    text-transform: uppercase;
   }
 }
 
@@ -1002,11 +983,8 @@ input[type='checkbox'] {
 
 .hero__milk-text__text {
   font-family: DM Sans;
-  font-style: normal;
-  font-weight: normal;
   font-size: 8px;
   line-height: 150%;
-  /* or 12px */
   color: #ffffff;
 }
 
@@ -1020,14 +998,9 @@ input[type='checkbox'] {
 @media screen and (min-width: 1280px) {
   .hero__milk-text__text {
     width: 200px;
-    font-family: DM Sans;
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 140%;
-    /* or 20px */
     margin-bottom: 20px;
-    color: #ffffff;
   }
 }
 
@@ -1069,8 +1042,6 @@ input[type='checkbox'] {
   display: flex;
   flex-direction: column;
   font-family: DM Sans;
-  font-style: normal;
-  font-weight: normal;
   font-size: 8px;
   line-height: 10px;
   text-align: right;
@@ -1081,8 +1052,6 @@ input[type='checkbox'] {
 @media screen and (min-width: 1280px) {
   .hero__info__item {
     font-family: DM Sans;
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 18px;
     text-align: right;
@@ -1092,11 +1061,8 @@ input[type='checkbox'] {
 
 .hero__info__item > span {
   font-family: Titan One;
-  font-style: normal;
-  font-weight: normal;
   font-size: 28px;
   line-height: 32px;
-  /* identical to box height */
   text-align: right;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -1105,16 +1071,8 @@ input[type='checkbox'] {
 
 @media screen and (min-width: 1280px) {
   .hero__info__item > span {
-    font-family: Titan One;
-    font-style: normal;
-    font-weight: normal;
     font-size: 46px;
     line-height: 53px;
-    /* identical to box height */
-    text-align: right;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: #d41443;
   }
 }
 
